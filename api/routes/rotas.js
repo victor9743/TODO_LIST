@@ -4,7 +4,8 @@ var rota = express.Router();
 var controller = require("../controller/todoList_controller");
 
 rota.get("/issues", controller.listarIssues);
-rota.post("/issues", controller.newissue);
-
+rota.get("/issues/:id", controller.buscarIssue);
+rota.post("/issues", controller.newIssue);
+rota.put('/issues/:id', controller.editarIssue);
 
 module.exports = rota;

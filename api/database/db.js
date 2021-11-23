@@ -4,8 +4,8 @@ var knex = require("knex")({
         host: 'localhost',
         port: '5432',
         user: 'postgres',
-        password: '123456',
-        databases: 'TODOlist'
+        password: '1234',
+        database: 'TODOlist'
     }
 
 
